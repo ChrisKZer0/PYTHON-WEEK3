@@ -1,0 +1,65 @@
+CrudActivity - CrudData — Estructuras de Datos en Python
+
+1. LISTAS
+
+    Son colecciones ordenadas de elementos que pueden cambiar.
+    Son mutables porque puedes modificar su contenido sin necesidad de crear una nueva lista.
+    Son útiles para guardar varios datos que podemos cambiar, como tareas, notas o valores.
+    
+    Ejemplo:
+
+        verduras=["papa", "cebolla", "tomáte", "cilantro"]
+        print(verduras [1])
+        verduras[0]="pimentón"
+        verduras.remove("cilantro")
+
+2. TUPLAS
+
+    Son coleeciones ordenadas como listas, pero no se modifican como lo hacen las listas.
+    Son inmutables, python hace que sean fijas para proteger los datos que no se deberían cambiar.
+    Son útiles en situaciones dónde la información debe mantenerse igual, bien sea coordenadas o configuraciones.
+
+    Ejemplo:
+
+        coordenadas=(20.35.42)
+        print(coordenadas[0])
+        for valor in coordenadas
+        print(valor)
+
+3. DICCIONARIOS
+
+    Son estrcturas que se guardan en pares "clave:valor".
+    Almacenan la información cuando cada dato tiene un nombre (clave) que permite ser encontrado rápido.
+    Sus diferenecias son:
+        -No usan porsiciones numéricas, sino claves.
+        -Son mutables.
+        -Permiten representar información más organizada.
+
+    Ejemplo:
+
+        persona="nombre": "Gabriela", "edad": 25
+
+        persona["ciudad"]="Medellín"
+        print(persona["nombre"])
+        persona["edad"]=26
+        del persona["ciudad"]
+
+4. MATCH-CASE
+
+    Es una estructura de control para comparar valores y patrones. (Existe desde la version 3.10 de Python.)
+    Se usa para elegir acciones según distintos casos de forma clara como el if.
+    Lo que lo diferencia del if/elif es que:
+        1. Más ordenado
+        2. Permite patrones, no solo comparaciones.
+    Se usa cuando tiene varias opciones distintas según un valor específico.
+
+    Ejemplo:
+
+        opcion=2
+        match opcion:
+            case 1:
+                print("Elegiste uno")
+            case 2:
+                print("Elegiste dos")
+            case _:
+                print("Opciónn no válida")
